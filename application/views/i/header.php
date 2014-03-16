@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html lang="en-us ">
+<html>
     <head>
-        <title><?php echo $title ?> &mdash; TraceAnalyzer</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link id="mainstyle" rel="stylesheet" type="text/css" href="/asset/css/global.css">
-        <link rel="stylesheet" type="text/css" href="/asset/css/custom-theme/jquery-ui.min.css">
-        <link rel="stylesheet" type="text/css" href="/asset/css/custom-theme/prettyPhoto.css">
-        <script type='text/javascript' src='/asset/js/jquery.min.js'></script>
+    <meta charset='utf-8'>
+    <title>147House - Main</title>
+    <link rel="stylesheet" href="/asset/css/style.css" >
+    <link href="/asset/css/select2.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="/asset/js/html5.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link href="/asset/css/ie7.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if IE 8]>
+    <link href="/asset/css/ie8.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if IE 9]>
+    <link href="/asset/css/ie9.css" rel="stylesheet">
+    <![endif]-->
+    <script src="/asset/js/jquery-1.7.2.min.js"></script>
+    <script src="/asset/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/asset/js/script.js"></script>
+    <script src="/asset/js/select2.min.js"></script>
+    <script src="/asset/js/house.js"></script>
+    <script>
+        (function($){
+            $(document).ready(function() { 
+                $('body').addClass('home');/*tmp script for emulation wordpress body classes*/
+            });
+        })(jQuery);
+    </script>
     </head>
     <body>
-        <div id="container">
-            <div id="header" class="hide">
-                <a href="/"><h1>Trace Analyzer</h1></a>
-                <div id="userinfo">
-                <?php if ($this->user->logged_in()): ?>
-                    <p>Welcome, <?php echo $this->session->userdata('fname') ?> | <a href="/logout/">Logout</a></p>
-                <?php else: ?>
-                    <p><a href="/login/">Login</a></p>
-                <?php endif; ?>
-                </div>
-            </div>
-            <div id="content">
+        <div id="page">
+            <header>
+                <div id="header_wrapper">
+                    <img id="logoImg" src="/asset/images/logo.png"><h1><a href="/">147House.com</a></h1>
+                    <nav id="site-navigation" class="main-navigation">
+                        <div class="nav-menu">
+                            <ul>
+                                <li class="page_item"><a href="listing.html">Buy</a>
+                                    <ul class="children">
+                                        <li class="page_item"><a href="listing.html">House</a></li>
+                                        <li class="current_page_item"><a href="listing.html">Condos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_item"><a href="agents.html">Sell</a></li>
+                                <li class="page_item"><a href="blog.html">Rent</a></li>
+                                <li class="page_item"><a href="post.html">Knowledge</a></li>
+                                <li class="page_item"><a href="post.html">Q&A</a></li>
+                                <li class="page_item"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav><!--end of #site-navigation-->
+                    <div id="header_widget">
+                        <aside class="widget">
+                            <div class="login_buttons">
+                                <a class="register" href="login.html">Login</a>
+                                <a class="login" href="login.html">Register</a>
+                            </div>
+                        </aside>
+                    </div><!--end of #header_widget-->
+                </div><!--end of #header_wrapper-->
+            </header>

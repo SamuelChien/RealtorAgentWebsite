@@ -9,7 +9,16 @@
 				var last_class = $('#heading .indicators .current').attr('id')
 				$('#heading .indicators .current').removeClass('current');
 				$(this).addClass('current');
+				var image = $('#heading');
+		    	image.fadeOut(200, function () {
+		    		var pathArray = image.css("background-image").split('/');
+		    		var pathNumber = parseInt(pathArray[pathArray.length-1].split('.')[0]);
+		    		var pathIndex = pathNumber%10 + 1;
+		        	image.css("background-image", "url(/asset/images/heading/"+ pathIndex.toString() + ".jpg)"); 
+		        	image.fadeIn();
+		    	});
 				$('#heading_text_holder .heading_text.'+last_class).fadeOut(200, function(){$('#heading_text_holder .heading_text.'+current_class).fadeIn()});
+
 			}
 			return false;
 		})
