@@ -282,7 +282,7 @@
 									<ul>
 										<li><a href="index.html">Our Agents</a></li>
 										<li><a href="listing.html">Our History</a></li>
-										<li><a href="contact.html">Our Services</a></li>
+										<li><a href="contact.html">We are hiring</a></li>
 									</ul>
 								</div>
 								<div class="second">

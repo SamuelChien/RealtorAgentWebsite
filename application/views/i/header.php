@@ -38,6 +38,13 @@
                     <nav id="site-navigation" class="main-navigation">
                         <div class="nav-menu">
                             <ul>
+								<li class="page_item"><a href="post.html">About</a>
+									<ul class="children">
+                                        <li class="page_item"><a href="listing.html">Why Us</a></li>
+										<li class="page_item"><a href="/agents">Agents</a></li>
+										<li class="page_item"><a href="listing.html">Commissions</a></li>
+                                    </ul>
+								</li>
                                 <li class="page_item"><a href="listing.html">Buy</a>
                                     <ul class="children">
                                         <li class="page_item"><a href="listing.html">House</a></li>
@@ -46,7 +53,6 @@
                                 </li>
                                 <li class="page_item"><a href="agents.html">Sell</a></li>
                                 <li class="page_item"><a href="blog.html">Rent</a></li>
-                                <li class="page_item"><a href="post.html">Knowledge</a></li>
                                 <li class="page_item"><a href="post.html">Q&A</a></li>
                                 <li class="page_item"><a href="contact.html">Contact</a></li>
                             </ul>

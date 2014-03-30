@@ -193,9 +193,9 @@
 
 		/* !!! links - tmp script for testing html template !!! */
 		if($('#home_preview .home_preview').hasClass('agent_preview'))
-			$('#home_preview .home_preview.agent_preview').wrap('<a href="agent.html" />');
+			$('#home_preview .home_preview.agent_preview').wrap('<a href="/base/agent/agentID" />');
 		else
-			$('#home_preview .home_preview').wrap('<a href="listing.html" />');
+			$('#home_preview .home_preview').wrap('<a href="/" />');
 		/* !!! end of links !!! */
 	});
 })(jQuery);

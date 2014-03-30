@@ -1,4 +1,4 @@
-                <footer>
+            <footer>
                 <div class="site-info">
                     <span>147House All Right Reserved | v<?php echo config_item('version').' | Generated in '.$this->benchmark->elapsed_time().' seconds'; ?></span>
                 </div>

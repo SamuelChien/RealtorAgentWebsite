@@ -39,6 +39,8 @@
 */
 
 $route['default_controller'] = 'base';
+$route['agents'] = '/base/agents';
+$route['agent'] = '/base/agent';
 
 
 /* End of file routes.php */
